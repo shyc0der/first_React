@@ -28,6 +28,46 @@ body {
   border: 1px solid mediumblue;
   margin: auto;
 }
+.addForm{
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 0 0.5rem 0.25rem;
+  border: 1px solid #eee;
+  margin: 0.5rem 0.25rem;
+}
+.addForm label{
+  position: absolute;
+  left: -99999px;
+}
+.addForm input[type='text']{
+  flex-grow:1;
+  max-width: calc(100% - 58px);
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 00.25rem;
+  margin-right: 0.25rem;
+  margin-right: 0.25rem;
+  outline: none;
+
+  }
+  button{
+    height: 48px;
+    min-width: 48px;
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    font-size: 1rem;
+    background-color: aliceblue;
+    color: mediumblue;
+    cursor: pointer;
+  }
+  button:focus,button:hover{
+    color: white;
+    background-color: limegreen;
+    outline: none;
+  }
+
 
 header {
   width: 100%;
@@ -44,7 +84,7 @@ main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   overflow-y: auto;
 }
@@ -57,6 +97,7 @@ footer {
   display: grid;
   place-content: center;
 }
+
 
 ul {
   width: 100%;
